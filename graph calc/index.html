@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graphic Calculator</title>
+  <style>
+    #canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+  <br>
+  <label for="xmin">X Min:</label>
+  <input type="number" id="xmin" value="-10">
+  <label for="xmax">X Max:</label>
+  <input type="number" id="xmax" value="10">
+  <br>
+  <label for="ymin">Y Min:</label>
+  <input type="number" id="ymin" value="-10">
+  <label for="ymax">Y Max:</label>
+  <input type="number" id="ymax" value="10">
+  <br>
+  <label for="fn">Function:</label>
+  <input type="text" id="fn" value="x * x">
+  <br>
+  <input type="checkbox" id="showXAxis" checked>
+  <label for="showXAxis">Show X Axis</label>
+  <input type="checkbox" id="showYAxis" checked>
+  <label for="showYAxis">Show Y Axis</label>
+  <br>
+  <button onclick="draw()">Draw</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+  <script src="graph.js"></script>
+</body>
+</html>
